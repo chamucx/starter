@@ -20,14 +20,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = 'SECRET_KEY'
+#TO_DO Add the secret key
+#SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = True
 
 ##TO-DO Add the ALLOWED HOST FROM THE APP NAME
-ALLOWED_HOSTS = ['*', 'demoxdqw1.azurewebsites.net']
+#ALLOWED_HOSTS = ['*', 'domain.azurewebsites.net']
 
 # Application definition
 
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#TO-DO update db to use the postgre
+#TO-DO update db to use the postgresql
 DATABASES = {
     'default': {
         'ENGINE': 'ENGINE',

@@ -6,7 +6,7 @@ class Shelter(models.Model):
     name = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
     #TO-DO Add the id for Shelter
-    id = models.BigAutoField(primary_key=True)
+    #id = models.BigAutoField(primary_key=True)
 
     def __str__(self):
         return self.name
@@ -17,7 +17,7 @@ class Dog(models.Model):
     description = models.TextField()
     intake_date = models.DateTimeField(auto_now_add=True)
     #TO-DO Add the id for Shelter
-    id = models.BigAutoField(primary_key=True)
+    #id = models.BigAutoField(primary_key=True)
     
     def __str__(self):
         return self.name
