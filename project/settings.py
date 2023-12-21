@@ -79,21 +79,27 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#TO-DO update db to use the postgresql
+#TO-DO update db to use the postgresql / Azure and ElephantDb
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'ENGINE',
+#        'NAME': 'NAME',
+#        'HOST': 'HOST',
+#        'USER': 'USER',
+#        'PASSWORD': 'PASSWORD',
+#        'PORT': 'PORT',
+#        'OPTIONS': {
+#            'sslmode': 'require',
+#        },
+#    }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'ENGINE',
-        'NAME': 'NAME',
-        'HOST': 'HOST',
-        'USER': 'USER',
-        'PASSWORD': 'PASSWORD',
-        'PORT': 'PORT',
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 
 # Password validation
